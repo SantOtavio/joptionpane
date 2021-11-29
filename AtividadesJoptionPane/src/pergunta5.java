@@ -22,12 +22,14 @@ public class pergunta5 {
 
                 somatemperatura += temperatura;
 
-                if (temperatura < menor){
-                    menor = temperatura;
-                }
-                if (temperatura > menor){
+                if (temperatura > maior){
                     maior = temperatura;
                 }
+
+                if (temperatura < maior){
+                    menor = temperatura;
+                }
+
             }
         }while (test != 1);
         String joptionitems = "Maior temperatura: " + maior + "\n" + "Menor temperatura: " + menor + "\n" + "Média das temperaturas: " + somatemperatura / i;
